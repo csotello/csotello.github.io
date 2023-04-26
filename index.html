@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Carlos Sotello</title>
-        <link type="stylesheet" href="style.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li><a href="https://github.com/csotello">Github</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          
-          <div class="jumbotron">
-            <div class="container text-center">
-              <h1>Carlos Sotello</h1>      
-              <p>
-                I am a Computer Science major from Portland State University. 
-                I have experience developing web apps with python and HTML/CSS/JS as well as C/C++ and Java development in a Linux environment.
-                Currently looking for a business where I can apply the skills I have learned as well as grow professionaly.  
-              </p>
-            </div>
-          </div>
-            
-          <div class="container-fluid bg-3 text-center">    
-            <h3>Some of my Work</h3><br>
-            <div class="row">
-              <div class="col-sm-3">
-                <p><a href="https://book-site-7pahdjoj2q-uc.a.run.app/" >Simple website</a> for listing books made with python and Flask.<br>Utilizes Google Speech-to-Text and Translate API's with NoSQL backend(Google Datastore)</p>
-              </div>
-              <div class="col-sm-3">
-                <h4><a href="https://github.com/csotello/Gaffney-Orthotics-Capstone-Project">OrthoFreeD</a></h4>
-                <p>
-                  Collaborative project to develop a web-based 3D modeling program. Personally led the frontend team in using React.js to create the UI and connect backend functionality.
-                </p>
-              </div>
-              <div class="col-sm-3">
-                <h4><a href="https://github.com/csotello/WorkoutTracker">WorkoutTracker</a></h4>
-                <p>
-                  Simple Android application written in Java which utilizes AWS for backend data. Data is stored in DynamoDB and retrieved using Lambda functions and API Gateway.
-                </p>
-              </div>
-              <div class="col-sm-3">
-                <h4><a href="https://github.com/csotello/CuteDogStash">CuteDogStash</a></h4>
-                <p>
-                  Blog site written in Rust using the <a href="https://github.com/yewstack/yew">Yew</a> framework(similar to React.js) and <a href="https://github.com/thedodd/trunk">Trunk</a> to bundle generated .wasm and .js files.
-                  Aimed toward users on a shared computer, the site allows people to create accounts and post images(specifically of their dog) which others can rate. 
-                  Storage persists through local storage although some inital values have been provided.
-                </p>
-              </div>
-          </div><br>  
-    </body>
+
+<head>
+  <title>Carlos Sotello</title>
+  <link type="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="https://github.com/csotello">Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Carlos Sotello</h1>
+      <p>
+        Passionate Software Engineer looking for a business where I can apply my skills and grow professionaly.
+        I have experience developing web apps with python and React as well as general C/C++ and Java development.
+      </p>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-3 text-center">
+    <h3>Some of my Work</h3><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4><a href="https://github.com/csotello/BookTracker">BookTracker</a></h4>
+        <p>Simple website for listing books made with python
+          and Flask.<br>Utilizes Google Speech-to-Text and Translate API's with NoSQL backend(Google Datastore)</p>
+      </div>
+      <div class="col-sm-3">
+        <h4><a href="https://github.com/csotello/Gaffney-Orthotics-Capstone-Project">OrthoFreeD</a></h4>
+        <p>
+          Collaborative project to develop a web-based 3D modeling program. Personally led the frontend team in using
+          React.js to create the UI and connect backend functionality.
+        </p>
+      </div>
+      <div class="col-sm-3">
+        <h4><a href="https://github.com/csotello/NoCalNutrition">NoCalNutrition</a></h4>
+        <p>
+          Macro tracker using React Native. Focuses on Protein, Fat, and Carbs instead of calories.
+        </p>
+        <!-- <h4><a href="https://github.com/csotello/WorkoutTracker">WorkoutTracker</a></h4>
+        <p>
+          Simple Android application written in Java which utilizes AWS for backend data. Data is stored in DynamoDB and
+          retrieved using Lambda functions and API Gateway.
+        </p>-->
+      </div> 
+      <div class="col-sm-3">
+        <h4><a href="https://github.com/csotello/CuteDogStash">CuteDogStash</a></h4>
+        <p>
+          Blog site written in Rust using the <a href="https://github.com/yewstack/yew">Yew</a> framework(similar to
+          React.js) and <a href="https://github.com/thedodd/trunk">Trunk</a> to bundle generated .wasm and .js files.
+          Aimed toward users on a shared computer, the site allows people to create accounts and post
+          images(specifically of their dog) which others can rate.
+          Storage persists through local storage although some inital values have been provided.
+        </p>
+      </div>
+    </div><br>
+</body>
+
 </html>
