@@ -11,7 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="padding:0">
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -29,49 +29,80 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
-    <div class="container text-center">
-      <h1>Carlos Sotello</h1>
-      <p>
-        Passionate Software Engineer looking for a business where I can apply my skills and grow professionally.
-        I have experience developing web apps with python and React as well as general C/C++ and Java development.
-      </p>
+  <div class="container-fluid row jumbotron" style="margin: 5px;">
+    <div class="col-sm-4">
+      <p style="font-size: 50px;">Carlos Sotello</p>
+    </div>
+    <div class="col" style="font-size: 20px;">
+      Passionate Software Engineer looking for a business where I can apply my skills and grow professionally.
+      I'm currently working with React and React Native to develop web apps.
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid jumbotron row text-center">
+    <div class="col" style="font-size: 40px;border-bottom: 1px solid;">
+      <p>Goals</p>
+    </div>
+    <div class="col" style="font-size: 20px;">
+      Aiming to get an IT/Cybersecurity related master's degree and earn CompTia certifications.
     </div>
   </div>
 
-  <div class="container-fluid bg-3 text-center">
-    <h3>Some of my Work</h3><br>
-    <div class="row">
-      <div class="col-sm-3">
-        <h4><a href="https://github.com/csotello/NoCalNutrition">NoCalNutrition</a></h4>
-        <p>
-          Current work in progress. Macro tracker built with React Native. Focuses on Protein, Fat, and Carbs instead of calories. 
-          Aimed at users who want to focus on their health without the potential guilt associated with calorie counts.
-        </p>
-      </div> 
-      <div class="col-sm-3">
-        <h4><a href="https://github.com/csotello/Gaffney-Orthotics-Capstone-Project">OrthoFreeD</a></h4>
-        <p>
-          Collaborative project to develop a web-based 3D modeling program demo for a real client. Personally led the frontend team in using
-          React.js to create the UI and connect backend functionality by passing user event data to wasm functionality.
-        </p>
-      </div>
-      <div class="col-sm-3">
-        <h4><a href="https://github.com/csotello/CuteDogStash">CuteDogStash</a></h4>
-        <p>
-          Blog site written in Rust using the <a href="https://github.com/yewstack/yew">Yew</a> framework(similar to
-          React.js) and <a href="https://github.com/thedodd/trunk">Trunk</a> to bundle generated .wasm and .js files.
-          Aimed toward users on a shared computer, the site allows people to create accounts and post
-          images(specifically of their dog) which others can rate.
-          Storage persists through local storage although some initial values have been provided.
-        </p>
-      </div>
-      <div class="col-sm-3">
-        <h4><a href="https://github.com/csotello/BookTracker">BookTracker</a></h4>
-        <p>Simple website for listing books made with python
-          and Flask.<br>Utilizes Google Speech-to-Text and Translate API's with NoSQL backend(Google Datastore)</p>
-      </div>
-    </div><br>
+  <div class="container-fluid jumbotron row text-center">
+    <div class="col-lg-12" style="font-size: 20px;border-bottom: 1px solid;">Current Focus</div>
+    <div class="col-lg-4" style="font-size: 40px;">
+      <a href="https://github.com/csotello/NoCalNutrition">NoCalNutrition</a>
+    </div>
+    <div class="col" style="font-size: 20px;">
+      Macro tracker built with React Native. Focuses on Protein, Fat, and Carbs instead of calories. Aimed at users who
+      want to focus on their health without the potential guilt associated with calorie counts.
+    </div>
+  </div>
+
+  <div class="container-fluid jumbotron row text-center">
+    <div class="col-lg-12" style="font-size: 20px;border-bottom: 1px solid;">Previous Work</div>
+    <div class="col-lg-4" style="font-size: 40px;">
+      <a href="https://github.com/csotello/Gaffney-Orthotics-Capstone-Project">OrthoFreeD</a>
+    </div>
+    <div class="col" style="font-size: 20px;">
+      Collaborative project to develop a web-based 3D modeling program demo for a real client. Personally led the
+      frontend team in using
+      React.js to create the UI and connect backend functionality by passing user event data to wasm functionality.
+    </div>
+  </div>
+  <div class="container-fluid jumbotron row text-center">
+    <div class="col-lg-4" style="font-size: 40px;">
+      <a href="https://github.com/csotello/CuteDogStash">CuteDogStash</a>
+    </div>
+    <p>
+      Blog site written in Rust using the <a href="https://github.com/yewstack/yew">Yew</a> framework(similar to
+      React.js) and <a href="https://github.com/thedodd/trunk">Trunk</a> to bundle generated .wasm and .js files.
+      Aimed toward users on a shared computer, the site allows people to create accounts and post
+      images(specifically of their dog) which others can rate.
+      Storage persists through local storage although some initial values have been provided.
+    </p>
+  </div>
+
+  <div class="container-fluid jumbotron row text-center">
+    <div class="col" style="font-size: 40px;">Skills</div>
+    <div class="col-lg-6 row">
+      <div style="font-size: 20px;font-weight: bold;border-bottom: 1px solid;">Languages</div>
+      <div class="col">Javascript(React)</div>
+      <div class="col">C/C++</div>
+      <div class="col">Java</div>
+      <div class="col">Python</div>
+      <div class="col">Rust</div>
+    </div>
+    <div class="col-lg-6 row">
+      <div style="font-size: 20px;font-weight: bold;border-bottom: 1px solid;">Tools</div>
+      <div class="col">Git/Github</div>
+      <div class="col">Docker</div>
+      <div class="col">Google Cloud(GCP)</div>
+      <div class="col">AWS</div>
+    </div>
+  </div>
+
 </body>
 
 </html>
