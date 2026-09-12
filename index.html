@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Carlos Sotello</title>
-    <link type="stylesheet" href="style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -11,6 +10,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -19,13 +19,10 @@
     ></script>
   </head>
 
-  <body style="padding: 0" class="bg-body-secondary">
-    <nav
-      class="navbar navbar-expand-lg"
-      style="background-color: rgb(126, 124, 124)"
-    >
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand">Carlos Sotello</a>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand fw-semibold">Carlos Sotello</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,9 +38,9 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav gap-lg-2">
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/csotello">Github</a>
+              <a class="nav-link" href="https://github.com/csotello">GitHub</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.linkedin.com/in/csotello/"
@@ -55,158 +52,169 @@
       </div>
     </nav>
 
-    <div
-      class="container-fluid mb-3 text-center"
-      style="background-color: aliceblue"
-    >
-      <div class="fs-5 px-5 py-2">
-        I am passionate Software Engineer looking for a business where I can
-        apply my skills and grow professionally. I'm currently working with
-        React and React Native to develop web apps.
-      </div>
-    </div>
-
-    <div class="container-fluid row">
-      <p class="fs-2 text-center col align-self-center">Goals</p>
-      <div class="fs-5 col align-self-center">
-        Aiming to make lasting contributions as a software engineer while
-        attaining an IT/Cybersecurity related master's degree and earning
-        CompTia certifications.
-      </div>
-    </div>
-
-    <div class="container-fluid pt-4 text-center row">
-      <div class="fs-5">Current Focus</div>
-      <div class="fs-2 col">
-        <a
-          class="text-decoration-none pe-2"
-          href="https://github.com/csotello/NoCalNutrition"
-          >NoCalNutrition</a
-        >
-        <img src="./ic_launcher_round.png" alt="NoCalNutrition" />
-      </div>
-      <div class="fs-5 col">
-        Macro tracker built with React Native. Focuses on Protein, Fat, and
-        Carbs instead of calories. Aimed at users who want to focus on their
-        health without the potential guilt associated with calorie counts.
-      </div>
-    </div>
-
-    <div class="container-fluid text-center">
-      <div class="fs-5 border-bottom border-black">Previous Work</div>
-      <div class="carousel slide d-flex" id="projectCarousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card mx-auto w-75">
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  <a
-                    href="https://github.com/csotello/Gaffney-Orthotics-Capstone-Project"
-                    >OrthoFreeD</a
-                  >
-                </h5>
-                <p class="card-text">
-                  Collaborative project to develop a web-based 3D modeling
-                  program demo for a real client. Personally led the frontend
-                  team in using React.js to create the UI and connect backend
-                  functionality by passing user event data to wasm
-                  functionality.
-                </p>
-              </div>
-            </div>
+    <main>
+      <section class="hero-section text-center">
+        <div class="container">
+          <div class="fs-5 mx-auto hero-copy">
+            I am passionate Software Engineer looking for a business where I can
+            apply my skills and grow professionally. I'm currently working with
+            React and React Native to develop web apps.
           </div>
-          <div class="carousel-item">
-            <div class="card mx-auto w-75">
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  <a href="https://github.com/csotello/CuteDogStash"
-                    >CuteDogStash</a
-                  >
-                </h5>
-                <p class="card-text">
-                  Blog site written in Rust using the
-                  <a href="https://github.com/yewstack/yew">Yew</a>
-                  framework(similar to React.js) and
-                  <a href="https://github.com/thedodd/trunk">Trunk</a> to bundle
-                  generated .wasm and .js files. Aimed toward users on a shared
-                  computer, the site allows people to create accounts and post
-                  images(specifically of their dog) which others can rate.
-                  Storage persists through local storage.
-                </p>
-              </div>
-            </div>
+        </div>
+      </section>
+
+      <section class="container section-space">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4">
+            <h2 class="section-title mb-0">Goals</h2>
           </div>
-          <div class="carousel-item">
-            <div class="card mx-auto w-75">
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  <p>Husbot</p>
-                </h5>
-                <p class="card-text">
-                  Personal project to create a Twitch chat bot for my
-                  girlfriends stream. Current used and occasionally updated.
-                  Integrated with Guild Wars 2 API to show player information.
-                  Ale integrated Spotify API to allow viewers to add songs to
-                  the current queue.
-                </p>
-              </div>
+          <div class="col-md-8">
+            <div class="content-card fs-5">
+              Looking for a position where I can grow and make lasting
+              contributions.
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#projectCarousel"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon"
-            aria-hidden="true"
-            style="filter: invert(1)"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#projectCarousel"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon"
-            aria-hidden="true"
-            style="filter: invert(1)"
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
+      </section>
 
-    <div class="container-fluid text-center">
-      <div class="fs-2">Skills</div>
-      <div class="row pb-3">
+      <section class="container section-space pt-0 text-center">
+        <p class="eyebrow mb-2">Current Focus</p>
+        <div class="row align-items-center justify-content-center g-4">
+          <div class="col-md-5">
+            <a
+              class="project-link"
+              href="https://github.com/csotello/NoCalNutrition"
+              >NoCalNutrition</a
+            >
+            <img
+              class="project-icon ms-2"
+              src="./ic_launcher_round.png"
+              alt="NoCalNutrition"
+            />
+          </div>
+          <div class="col-md-7 text-md-start">
+            <div class="content-card fs-5">
+              Macro tracker built with React Native. Focuses on Protein, Fat,
+              and Carbs instead of calories. Aimed at users who want to focus on
+              their health without the potential guilt associated with calorie
+              counts.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section-space pt-0 text-center">
+        <p class="eyebrow border-bottom pb-3 mb-4">Previous Work</p>
         <div
-          style="font-size: 20px; font-weight: bold; border-bottom: 1px solid"
+          class="carousel slide project-carousel"
+          id="projectCarousel"
+          data-bs-ride="carousel"
         >
-          Languages
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card project-card mx-auto">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="card-title text-center h4">
+                    <a
+                      href="https://github.com/csotello/Gaffney-Orthotics-Capstone-Project"
+                      >OrthoFreeD</a
+                    >
+                  </h3>
+                  <p class="card-text mb-0">
+                    Collaborative project to develop a web-based 3D modeling
+                    program demo for a real client. Personally led the frontend
+                    team in using React.js to create the UI and connect backend
+                    functionality by passing user event data to wasm
+                    functionality.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card project-card mx-auto">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="card-title text-center h4">
+                    <a href="https://github.com/csotello/CuteDogStash"
+                      >CuteDogStash</a
+                    >
+                  </h3>
+                  <p class="card-text mb-0">
+                    Blog site written in Rust using the
+                    <a href="https://github.com/yewstack/yew">Yew</a>
+                    framework(similar to React.js) and
+                    <a href="https://github.com/thedodd/trunk">Trunk</a> to
+                    bundle generated .wasm and .js files. Aimed toward users on
+                    a shared computer, the site allows people to create accounts
+                    and post images(specifically of their dog) which others can
+                    rate. Storage persists through local storage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card project-card mx-auto">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="card-title text-center h4">Husbot</h3>
+                  <p class="card-text mb-0">
+                    Personal project to create a Twitch chat bot for my
+                    girlfriends stream. Current used and occasionally updated.
+                    Integrated with Guild Wars 2 API to show player information.
+                    Ale integrated Spotify API to allow viewers to add songs to
+                    the current queue.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="col">Javascript(React)</div>
-        <div class="col">C/C++</div>
-        <div class="col">Java</div>
-        <div class="col">Python</div>
-        <div class="col">Rust</div>
-      </div>
-      <div class="row pb-5">
-        <div
-          style="font-size: 20px; font-weight: bold; border-bottom: 1px solid"
-        >
-          Tools
+      </section>
+
+      <section class="container section-space pt-0 text-center">
+        <h2 class="section-title mb-4">Skills</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="skill-group h-100">
+              <h3 class="h5">Languages</h3>
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge rounded-pill">JavaScript (React)</span>
+                <span class="badge rounded-pill">C/C++</span>
+                <span class="badge rounded-pill">Java</span>
+                <span class="badge rounded-pill">Python</span>
+                <span class="badge rounded-pill">Rust</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-group h-100">
+              <h3 class="h5">Tools</h3>
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge rounded-pill">Git/GitHub</span>
+                <span class="badge rounded-pill">Docker</span>
+                <span class="badge rounded-pill">Google Cloud (GCP)</span>
+                <span class="badge rounded-pill">AWS</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col">Git/Github</div>
-        <div class="col">Docker</div>
-        <div class="col">Google Cloud(GCP)</div>
-        <div class="col">AWS</div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>

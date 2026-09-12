@@ -1,5 +1,74 @@
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+:root {
+  --ink: #18233a;
+  --muted-ink: #5d6980;
+  --brand: #234a78;
+  --brand-dark: #172e4a;
+  --surface: #ffffff;
+  --canvas: #f4f7fb;
+  --line: #dce4f0;
+}
+
+body {
+  color: var(--ink);
+  background: var(--canvas);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
 .navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-  }
+  background: linear-gradient(110deg, var(--brand-dark), var(--brand));
+}
+
+.navbar-brand { letter-spacing: .015em; }
+.nav-link { color: rgba(255, 255, 255, .8) !important; }
+.nav-link:hover, .nav-link:focus { color: #fff !important; }
+
+.hero-section {
+  padding: 4.5rem 0;
+  color: #fff;
+  background: linear-gradient(125deg, rgba(23, 46, 74, .96), rgba(35, 74, 120, .88));
+}
+
+.hero-copy { max-width: 47rem; line-height: 1.7; }
+.section-space { padding-top: 4rem; padding-bottom: 1.5rem; }
+.section-title { color: var(--brand-dark); font-weight: 700; }
+
+.eyebrow {
+  color: var(--muted-ink);
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.content-card, .skill-group {
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  box-shadow: 0 .35rem 1.25rem rgba(24, 35, 58, .06);
+}
+
+.project-link, .card-title a {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+}
+.project-link { font-size: 1.5rem; }
+.project-link:hover, .card-title a:hover { color: var(--brand-dark); text-decoration: underline; }
+.project-icon { width: 3rem; height: 3rem; }
+
+.project-carousel { padding: 0 3.25rem; }
+.project-card { max-width: 48rem; border: 1px solid var(--line); box-shadow: 0 .35rem 1.25rem rgba(24, 35, 58, .08); }
+.card-text { color: var(--muted-ink); line-height: 1.7; text-align: left; }
+.carousel-control-prev, .carousel-control-next { width: 3rem; }
+.carousel-control-prev-icon, .carousel-control-next-icon { background-color: var(--brand); border-radius: 50%; background-size: 55%; }
+
+.skill-group h3 { color: var(--brand-dark); font-weight: 700; }
+.badge { padding: .55rem .8rem; color: var(--brand-dark); background: #e7eef8; font-size: .9rem; font-weight: 600; }
+
+@media (max-width: 767.98px) {
+  .hero-section { padding: 3rem 0; }
+  .section-space { padding-top: 3rem; }
+  .project-carousel { padding: 0 2.5rem; }
+  .project-icon { display: block; margin: .75rem auto 0 !important; }
+}
